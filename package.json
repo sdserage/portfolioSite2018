@@ -1,0 +1,36 @@
+{
+  "name": "portfolioSite2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "live-server ./",
+    "build-css": "node-sass-chokidar . -o .",
+    "watch-css": "npm run build-css && node-sass-chokidar . -o . --watch --recursive",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdserage/portfolioSite2018.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdserage/portfolioSite2018/issues"
+  },
+  "homepage": "https://github.com/sdserage/portfolioSite2018#readme",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "dotenv": "^5.0.0",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "lodash": "^4.17.5",
+    "massive": "^4.6.4",
+    "node-sass-chokidar": "0.0.3",
+    "nodemon": "^1.14.12",
+    "npm": "^5.6.0"
+  }
+}
