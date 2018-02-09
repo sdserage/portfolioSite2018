@@ -1,39 +1,43 @@
 <!DOCTYPE htm>
-<html ng-app="portfolioApp" class="ng-scope">
+<html ng-app="portfolioApp" class="ng-scope" lang="en">
 
 <head>
   <meta charset="utf-8">
   <title>S Serage Portfolio</title>
   <!-- Reset default styles -->
-  <link rel='stylesheet' href='/assets/styles/reset.css'>
+  <link rel='stylesheet' href='assets/styles/reset.css'>
   <!-- Main style -->
-  <link rel='stylesheet' href='/assets/styles/main.css'>
+  <link rel='stylesheet' href='assets/styles/main.css'>
   <!-- Component styles -->
-  <link rel='stylesheet' href="/app/about/about.css">
+  <link rel='stylesheet' href="app/landing/landing.css">
+  <link rel='stylesheet' href="app/about/about.css">
+  <link rel='stylesheet' href="app/skills/skills.css">
+  <link rel='stylesheet' href="app/projects/projects.css">
+  <link rel='stylesheet' href="app/contact/contact.css">
   <!-- <link rel='shortcut icon' href="/assets/pictures/icon.png"> -->
 </head>
 
 <body>
-  <header>
-    <h1> Title </h1>
-  </header>
-  <section class="about">
-    <h1> About Me </h1>
-  </section>
-  <section class="skills">
-    <h1> My Skills </h1>
-  </section>
-  <section class="portfolio">
-    <h1> My Projects </h1>
-  </section>
-  <footer class="contact">
-    <h1> Contact Me </h1>
-  </footer>
+  <landing></landing>
+  <about></about>
+  <skills></skills>
+  <projects></projects>
+  <contact></contact>
   <!-- Anguluar and ui-router -->
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js" charset="utf-8"></script>
   <!-- Script files -->
-  <script src="app/app.js" charset="utf-8"></script>
+  <script src="app/app.module.js"></script>
+  <script src="app/app.config.js"></script>
+  <script src="app/landing/landing.module.js"></script>
+  <script src="app/landing/landing.component.js"></script>
+  <script src="app/about/about.module.js"></script>
+  <script src="app/about/about.component.js"></script>
+  <script src="app/skills/skills.module.js"></script>
+  <script src="app/skills/skills.component.js"></script>
+  <script src="app/projects/projects.module.js"></script>
+  <script src="app/projects/projects.component.js"></script>
+  <script src="app/contact/contact.module.js"></script>
+  <script src="app/contact/contact.component.js"></script>
 </body>
 
 </html>
