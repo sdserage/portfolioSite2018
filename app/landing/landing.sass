@@ -1,2 +1,52 @@
+@import "../../assets/styles/partials/themeController"
+
 .landing
-  color: magenta
+  height: 100vh
+  position: relative
+  display: flex
+  flex-direction: column
+  align-items: center
+
+.landing::before
+  content: ''
+  background-image: url('../../assets/pictures/sandHR.jpg')
+  opacity: .2
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: -1
+
+.landing::after
+  content: ''
+  background-color: $blueSteel
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: -2
+
+.logo
+  font-family: $logoFont
+  display: flex
+  align-items: center
+  margin-bottom: $spacer
+  margin-top: $spacer
+
+.double-line
+  border-top: double
+  border-width: 5px
+  width: 30px
+
+.sds-primary-photo
+  height: 300px
+  border-radius: 50%
+  border-style: solid
+  border-color: $blueSteel
+  border-width: 10px
+  margin-bottom: $spacer
+
+.sds-primary-heading
+  font-size: 3em
