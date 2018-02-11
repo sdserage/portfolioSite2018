@@ -50,19 +50,36 @@ body {
 
 /* standardized h group */
 h1 {
-  font-size: 2em; }
+  font-size: 4em; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 3em; }
 
 h3 {
-  font-size: 1.17em; }
+  font-size: 2.34em; }
 
 h4 {
-  font-size: 1.12em; }
+  font-size: 2.24em; }
 
 h5 {
-  font-size: .83em; }
+  font-size: 1.64em; }
 
 h6 {
-  font-size: .75em; }
+  font-size: 1.5em; }
+
+.logo {
+  font-family: "Roboto Slab", serif;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 30px; }
+
+.double-line {
+  border-top: double;
+  border-width: 10px;
+  width: 30px; }
+
+.double-line-large {
+  border-top: double;
+  border-width: 20px;
+  width: 50px; }
