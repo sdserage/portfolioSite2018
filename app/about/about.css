@@ -1,2 +1,13 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo|Roboto+Slab");
 #about {
-  color: blue; }
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 30px; }
+  #about h1 {
+    margin-bottom: 30px;
+    align-self: center; }
+  #about p {
+    margin-bottom: 30px; }
