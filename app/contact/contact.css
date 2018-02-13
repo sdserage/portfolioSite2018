@@ -1,2 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo|Roboto+Slab");
 #contact {
-  color: yellow; }
+  margin-top: 30px;
+  margin-bottom: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.contact-icons {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  justify-content: center; }
+
+.contact-icon-size {
+  font-size: 15em; }
+
+.signature {
+  align-self: flex-end;
+  margin: 30px; }
