@@ -1,17 +1,17 @@
 <section id="projects">
   <h1> My Projects </h1>
   <div class="image-manager">
-    <button>Air Management Specialists</button>
-    <button>Trippin'</button>
+    <button ng-click="swapPaths('ams')">Air Management Specialists</button>
+    <button ng-click="swapPaths('trippin')">Trippin'</button>
   </div>
   <div class="image-slider">
-    <button>
+    <button ng-click="decrementIndex()">
       <i class="slider-arrows material-icons">
         keyboard_arrow_left
       </i>
     </button>
-    <img src="../../assets/pictures/ams-viewinquiries.png" alt="project image" class="project-image"/>
-    <button>
+    <img src="{{project[pathIndex]}}" alt="project image" class="project-image"/>
+    <button ng-click="incrementIndex()">
       <i class="slider-arrows material-icons">
         keyboard_arrow_right
       </i>

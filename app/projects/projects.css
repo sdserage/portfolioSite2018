@@ -7,6 +7,13 @@
   #projects h1 {
     margin-bottom: 30px; }
 
+.image-manager {
+  display: flex;
+  flex-direction: column; }
+  .image-manager button {
+    font-size: 2em;
+    margin-bottom: 30px; }
+
 .image-slider {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr; }
