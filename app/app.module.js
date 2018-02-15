@@ -2,7 +2,6 @@
 
 angular.module("portfolioApp", [
   'menu',
-  'landing',
   'about',
   'skills',
   'projects',

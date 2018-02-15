@@ -1,13 +1,53 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo|Roboto+Slab");
 #about {
-  background: black;
-  color: white;
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  align-items: center;
   padding: 30px; }
-  #about h1 {
-    margin-bottom: 30px;
-    align-self: center; }
   #about p {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    align-self: flex-start;
+    text-indent: 1em; }
+
+#about::before {
+  content: '';
+  background-image: url("../../assets/pictures/sandHR.jpg");
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1; }
+
+#about::after {
+  content: '';
+  background-color: #3f7775;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2; }
+
+.sds-primary-photo {
+  height: 800px;
+  width: 800px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #3f7775;
+  border-width: 10px;
+  margin-bottom: 30px; }
+
+.sds-primary-title {
+  font-size: 7em; }
+
+.about-heading {
+  margin: 30px; }
+
+.logo-size-landing h1 {
+  font-size: 110px; }
+
+.logo-size-landing h2 {
+  font-size: 90px; }

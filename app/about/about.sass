@@ -1,14 +1,54 @@
 @import "../../assets/styles/partials/themeController"
 
 #about
-  background: black
-  color: white
+  position: relative
   display: flex
   flex-direction: column
-  justify-content: flex-start
+  align-items: center
   padding: $spacer
-  h1
-    margin-bottom: $spacer
-    align-self: center
   p
     margin-bottom: $spacer
+    align-self: flex-start
+    text-indent: 1em
+
+#about::before
+  content: ''
+  background-image: url('../../assets/pictures/sandHR.jpg')
+  opacity: .2
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: -1
+
+#about::after
+  content: ''
+  background-color: $mediumColor
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: -2
+
+.sds-primary-photo
+  height: 800px
+  width: 800px
+  border-radius: 50%
+  border-style: solid
+  border-color: $blueSteel
+  border-width: 10px
+  margin-bottom: $spacer
+
+.sds-primary-title
+  font-size: 7em
+
+.about-heading
+  margin: $spacer
+
+.logo-size-landing
+  h1
+    font-size: 110px
+  h2
+    font-size: 90px
