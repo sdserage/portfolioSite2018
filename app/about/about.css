@@ -8,7 +8,7 @@
   #about p {
     margin-bottom: 30px;
     align-self: flex-start;
-    text-indent: 1em; }
+    text-indent: 50px; }
 
 #about::before {
   content: '';
