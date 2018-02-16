@@ -5,15 +5,28 @@
   display: flex
   flex-direction: column
   align-items: center
+  background: $lightColor
   h1
     margin-bottom: $spacer
+  button
+    border-style: none
+    color: white
 
 .image-manager
   display: flex
   flex-direction: column
   button
-    font-size: 2em
+    font-size: 4em
     margin-bottom: $spacer
+    font-family: $primaryFont
+    border-radius: 100px
+    padding: $spacer
+    background: $darkColor
+  button:focus
+    outline: none !important
+    background: $mediumColor
+  button:hover
+    background: $mediumColor
 
 .image-slider
   display: grid
@@ -25,3 +38,27 @@
 
 .slider-arrows
   font-size: 5em
+
+#left-arrow-button
+  border-top-left-radius: 200px
+  border-bottom-left-radius: 200px
+  background: $darkColor
+
+#left-arrow-button:focus
+  outline: none !important
+  background: $mediumColor
+
+#left-arrow-button:hover
+  background: $mediumColor
+
+#right-arrow-button
+  border-top-right-radius: 200px
+  border-bottom-right-radius: 200px
+  background: $darkColor
+
+#right-arrow-button:focus
+  outline: none !important
+  background: $mediumColor
+
+#right-arrow-button:hover
+  background: $mediumColor

@@ -1,22 +1,28 @@
 @import "../../assets/styles/partials/themeController"
 
 #contact
-  margin-top: $spacer
-  margin-bottom: 150px
+  padding-top: $spacer
+  padding-bottom: 150px
   display: flex
   flex-direction: column
   align-items: center
+  background: $darkColor
+  color: $lightColor
 
 .contact-icons
+  align-self: flex-start
   margin: $spacer
   display: grid
-  grid-template-columns: 1fr 1fr 1fr
+  grid-template-rows: 1fr 1fr 1fr
   grid-column-gap: $spacer
-  justify-content: center
+  align-items: start
+  i
+    padding-bottom: $spacer
 
 .contact-icon-size
-  font-size: 15em
+  font-size: 5em
+  color: $lightColor
 
 .signature
   align-self: flex-end
-  margin: $spacer
+  padding: $spacer

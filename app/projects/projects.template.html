@@ -5,13 +5,13 @@
     <button ng-click="swapPaths('trippin')">Trippin'</button>
   </div>
   <div class="image-slider">
-    <button ng-click="decrementIndex()">
+    <button id="left-arrow-button" ng-click="decrementIndex()">
       <i class="slider-arrows material-icons">
         keyboard_arrow_left
       </i>
     </button>
     <img src="{{project[pathIndex]}}" alt="project image" class="project-image"/>
-    <button ng-click="incrementIndex()">
+    <button id="right-arrow-button" ng-click="incrementIndex()">
       <i class="slider-arrows material-icons">
         keyboard_arrow_right
       </i>

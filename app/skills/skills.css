@@ -9,11 +9,14 @@
 
 .skills-icons {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  grid-column-gap: 30px;
-  grid-row-gap: 30px;
-  margin-bottom: 30px; }
+  grid-column-gap: 10vw;
+  grid-row-gap: 5vw;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-top: solid #606d82 15px;
+  border-bottom: solid #606d82 15px; }
 
 .skills-icons-size {
   font-size: 10em; }
