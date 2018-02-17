@@ -1,28 +1,67 @@
 @import "../../assets/styles/partials/themeController"
 
 #contact
+  position: relative
   padding-top: $spacer
   padding-bottom: 150px
   display: flex
   flex-direction: column
-  align-items: center
-  background: $darkColor
-  color: $lightColor
+  align-items: flex-start
+  color: white
+  h1
+    margin-bottom: $spacer
+    align-self: center
+
+#contact::before
+  content: ''
+  background-image: url('../../assets/pictures/circuit.jpeg')
+  background-repeat: no-repeat
+  opacity: .2
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: -1
+
+#contact::after
+  content: ''
+  background-color: $darkColor
+  position: absolute
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  z-index: -2
+
+.contact-info
+  font-size: 1.4em
+  p
+    padding: $spacer
+  a
+    color: $lightColor
 
 .contact-icons
-  align-self: flex-start
   margin: $spacer
   display: grid
-  grid-template-rows: 1fr 1fr 1fr
+  flex-direction: column
+  grid-template-columns: 1fr 9fr
+  justify-content: flex-start
   grid-column-gap: $spacer
-  align-items: start
-  i
+  a
     padding-bottom: $spacer
+    color: $lightColor
 
 .contact-icon-size
   font-size: 5em
   color: $lightColor
 
+.twitter-icon
+  font-size: 4em
+  color: $lightColor
+
 .signature
   align-self: flex-end
   padding: $spacer
+  font-weight: bold
+  color: white

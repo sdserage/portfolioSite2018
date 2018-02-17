@@ -1,27 +1,66 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo|Roboto+Slab");
 #contact {
+  position: relative;
   padding-top: 30px;
   padding-bottom: 150px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: #2a3342;
-  color: #aec4e8; }
+  align-items: flex-start;
+  color: white; }
+  #contact h1 {
+    margin-bottom: 30px;
+    align-self: center; }
+
+#contact::before {
+  content: '';
+  background-image: url("../../assets/pictures/circuit.jpeg");
+  background-repeat: no-repeat;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1; }
+
+#contact::after {
+  content: '';
+  background-color: #2a3342;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2; }
+
+.contact-info {
+  font-size: 1.4em; }
+  .contact-info p {
+    padding: 30px; }
+  .contact-info a {
+    color: #aec4e8; }
 
 .contact-icons {
-  align-self: flex-start;
   margin: 30px;
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
-  grid-column-gap: 30px;
-  align-items: start; }
-  .contact-icons i {
-    padding-bottom: 30px; }
+  flex-direction: column;
+  grid-template-columns: 1fr 9fr;
+  justify-content: flex-start;
+  grid-column-gap: 30px; }
+  .contact-icons a {
+    padding-bottom: 30px;
+    color: #aec4e8; }
 
 .contact-icon-size {
   font-size: 5em;
   color: #aec4e8; }
 
+.twitter-icon {
+  font-size: 4em;
+  color: #aec4e8; }
+
 .signature {
   align-self: flex-end;
-  padding: 30px; }
+  padding: 30px;
+  font-weight: bold;
+  color: white; }

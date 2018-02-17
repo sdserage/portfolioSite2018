@@ -1,15 +1,37 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo|Roboto+Slab");
 #projects {
+  position: relative;
   padding: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: #aec4e8; }
+  align-items: center; }
   #projects h1 {
     margin-bottom: 30px; }
   #projects button {
     border-style: none;
     color: white; }
+
+#projects::before {
+  content: '';
+  background-image: url("../../assets/pictures/keyboard.jpeg");
+  background-repeat: no-repeat;
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1; }
+
+#projects::after {
+  content: '';
+  background-color: #aec4e8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2; }
 
 .image-manager {
   display: flex;
@@ -61,3 +83,10 @@
 
 #right-arrow-button:hover {
   background: #606d82; }
+
+.project-content {
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 30px;
+  font-size: 2em;
+  padding: 30px; }

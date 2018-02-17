@@ -1,9 +1,32 @@
 <footer id="contact">
   <h1>Let's get in touch!</h1>
+  <div class="contact-info">
+    <p>Call or text me anytime at <a href="tel:435-619-0664">(435)619-0564</a></p>
+    <p>Email me at <a href="mailto:xttocsurge51@gmail.com">xttocsurge51@gmail.com</a></p>
+  </div>
   <div class="contact-icons">
-    <i alt="Facebook" class="contact-icon-size devicon-facebook-plain"></i>
-    <i alt="Twitter" class="contact-icon-size devicon-twitter-plain"></i>
-    <i alt="GitHub" class="contact-icon-size devicon-github-plain"></i>
+
+    <a target="_blank" href="{{facebook}}" ng-click="linkOutside(facebook)">
+      <i alt="Facebook" class="contact-icon-size devicon-facebook-plain"></i>
+    </a>
+    <a target="_blank" href="{{facebook}}" ng-click="linkOutside(facebook)">
+      <h3>Follow me on Facebook!</h3>
+    </a>
+
+    <a target="_blank" href="{{twitter}}" ng-click="linkOutside(twitter)">
+      <i alt="Twitter" class="twitter-icon devicon-twitter-plain"></i>
+    </a>
+    <a target="_blank" href="{{twitter}}" ng-click="linkOutside(twitter)">
+      <h3>Follow me on Twitter!</h3>
+    </a>
+
+    <a target="_blank" href="{{gitHub}}" ng-click="linkOutside(gitHub)">
+      <i alt="GitHub" class="contact-icon-size devicon-github-plain"></i>
+    </a>
+    <a target="_blank" href="{{gitHub}}" ng-click="linkOutside(gitHub)">
+      <h3>See what I'm working on at GitHub!</h3>
+    </a>
+
   </div>
   <h2 class="signature">Serage Web Design 2018&trade;</h2>
 </footer>
