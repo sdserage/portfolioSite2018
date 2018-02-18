@@ -1,18 +1,53 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo|Roboto+Slab");
 #projects {
+  position: relative;
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center; }
   #projects h1 {
     margin-bottom: 30px; }
+  #projects button {
+    border-style: none;
+    color: white; }
+
+#projects::before {
+  content: '';
+  background-image: url("../../assets/pictures/keyboard.jpeg");
+  background-repeat: no-repeat;
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1; }
+
+#projects::after {
+  content: '';
+  background-color: #aec4e8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2; }
 
 .image-manager {
   display: flex;
   flex-direction: column; }
   .image-manager button {
-    font-size: 2em;
-    margin-bottom: 30px; }
+    font-size: 4em;
+    margin-bottom: 30px;
+    font-family: "Arimo", sans-serif;
+    border-radius: 100px;
+    padding: 30px;
+    background: #2a3342; }
+  .image-manager button:focus {
+    outline: none !important;
+    background: #606d82; }
+  .image-manager button:hover {
+    background: #606d82; }
 
 .image-slider {
   display: grid;
@@ -24,3 +59,34 @@
 
 .slider-arrows {
   font-size: 5em; }
+
+#left-arrow-button {
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  background: #2a3342; }
+
+#left-arrow-button:focus {
+  outline: none !important;
+  background: #606d82; }
+
+#left-arrow-button:hover {
+  background: #606d82; }
+
+#right-arrow-button {
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  background: #2a3342; }
+
+#right-arrow-button:focus {
+  outline: none !important;
+  background: #606d82; }
+
+#right-arrow-button:hover {
+  background: #606d82; }
+
+.project-content {
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 30px;
+  font-size: 2em;
+  padding: 30px; }

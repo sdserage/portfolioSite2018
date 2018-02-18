@@ -2,7 +2,7 @@
   "name": "portfolioSite2018",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
     "dev": "live-server ./",
     "build-css": "node-sass-chokidar . -o .",

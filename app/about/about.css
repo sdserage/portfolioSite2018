@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px; }
+  padding: 30px;
+  color: white; }
   #about p {
     margin-bottom: 30px;
     align-self: flex-start;
@@ -12,7 +13,8 @@
 
 #about::before {
   content: '';
-  background-image: url("../../assets/pictures/sandHR.jpg");
+  background-image: url("../../assets/pictures/texturedWood.jpeg");
+  background-repeat: no-repeat;
   opacity: .2;
   position: absolute;
   top: 0;
@@ -23,7 +25,7 @@
 
 #about::after {
   content: '';
-  background-color: #3f7775;
+  background-color: #606d82;
   position: absolute;
   top: 0;
   left: 0;
@@ -32,22 +34,25 @@
   z-index: -2; }
 
 .sds-primary-photo {
-  height: 800px;
-  width: 800px;
+  height: 400px;
+  width: 400px;
   border-radius: 50%;
   border-style: solid;
-  border-color: #3f7775;
+  border-color: #606d82;
   border-width: 10px;
   margin-bottom: 30px; }
 
 .sds-primary-title {
-  font-size: 7em; }
+  font-size: 7em;
+  font-family: "Roboto Slab", serif;
+  margin-bottom: 30px; }
 
-.about-heading {
-  margin: 30px; }
+.sds-primary-subtitle {
+  padding-left: 20vw;
+  padding-right: 20vw;
+  padding-bottom: 30px;
+  border-bottom: solid 15px;
+  margin-bottom: 30px; }
 
-.logo-size-landing h1 {
-  font-size: 110px; }
-
-.logo-size-landing h2 {
-  font-size: 90px; }
+.about-content {
+  margin-top: 30px; }
