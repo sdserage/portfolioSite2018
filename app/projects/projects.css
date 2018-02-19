@@ -1,26 +1,113 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo|Roboto+Slab");
 #projects {
+  position: relative;
   padding: 30px;
   display: flex;
   flex-direction: column;
   align-items: center; }
   #projects h1 {
     margin-bottom: 30px; }
+  #projects button {
+    border-style: none;
+    color: white; }
+
+#projects::before {
+  content: '';
+  background-image: url("../../assets/pictures/keyboard.jpeg");
+  background-repeat: no-repeat;
+  opacity: .3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1; }
+
+#projects::after {
+  content: '';
+  background-color: #aec4e8;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2; }
 
 .image-manager {
   display: flex;
   flex-direction: column; }
   .image-manager button {
-    font-size: 2em;
-    margin-bottom: 30px; }
+    font-size: 1em;
+    margin-bottom: 30px;
+    font-family: "Arimo", sans-serif;
+    padding: 10px;
+    border-radius: 100px;
+    background: #2a3342; }
+  .image-manager button:focus {
+    outline: none !important;
+    background: #606d82; }
+  .image-manager button:hover {
+    background: #606d82; }
 
 .image-slider {
   display: grid;
   grid-template-columns: 1fr 8fr 1fr; }
 
 .project-image {
-  width: 80vw;
-  height: 80vw; }
+  width: 70vw;
+  height: 70vw; }
 
 .slider-arrows {
-  font-size: 5em; }
+  font-size: 2em; }
+
+#left-arrow-button {
+  border-top-left-radius: 200px;
+  border-bottom-left-radius: 200px;
+  background: #2a3342; }
+
+#left-arrow-button:focus {
+  outline: none !important;
+  background: #606d82; }
+
+#left-arrow-button:hover {
+  background: #606d82; }
+
+#right-arrow-button {
+  border-top-right-radius: 200px;
+  border-bottom-right-radius: 200px;
+  background: #2a3342; }
+
+#right-arrow-button:focus {
+  outline: none !important;
+  background: #606d82; }
+
+#right-arrow-button:hover {
+  background: #606d82; }
+
+.project-content {
+  border-radius: 20px;
+  background-color: white;
+  margin-top: 30px;
+  font-size: 1.2em;
+  padding: 30px; }
+
+@media (min-width: 820px) {
+  #projects h1 {
+    color: white;
+    padding: 30px;
+    font-size: 4em; }
+  #projects::before {
+    background: linear-gradient(to right, #aec4e8, #606d82, #aec4e8);
+    opacity: .7; }
+  #projects::after {
+    background-image: url("../../assets/pictures/sandHR.jpg"); }
+  .project-image {
+    width: 35vw;
+    height: 35vw; }
+  .image-manager {
+    flex-direction: row; }
+    .image-manager button {
+      font-size: 2em;
+      margin: 30px; }
+  .project-content {
+    width: 50vw; } }
