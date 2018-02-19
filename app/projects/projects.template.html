@@ -1,8 +1,16 @@
 <section id="projects">
-  <h1> My Projects </h1>
+  <h1 class="projects-header"> My Projects </h1>
   <div class="image-manager">
     <button ng-click="swapPaths('ams')">Air Management Specialists</button>
     <button ng-click="swapPaths('trippin')">Trippin'</button>
+    <div class="project-links-pc">
+      <a target="_blank" href="{{website}}" ng-click="linkOutside(website)">
+        <button>Website</button>
+      </a>
+      <a  target="_blank" href="{{gitHub}}" ng-click="linkOutside(gitHub)">
+        <button>GitHub</button>
+      </a>
+    </div>
   </div>
   <div class="image-slider">
     <button id="left-arrow-button" ng-click="decrementIndex()">
@@ -19,5 +27,13 @@
   </div>
   <div class="project-content">
     {{projectContent}}
+    <div class="project-links">
+      <a target="_blank" href="{{website}}" ng-click="linkOutside(website)">
+        <button>Website</button>
+      </a>
+      <a  target="_blank" href="{{gitHub}}" ng-click="linkOutside(gitHub)">
+        <button>GitHub</button>
+      </a>
+    </div>
   </div>
 </section>

@@ -60,6 +60,9 @@
 .slider-arrows {
   font-size: 2em; }
 
+.project-links-pc {
+  display: none; }
+
 #left-arrow-button {
   border-top-left-radius: 200px;
   border-bottom-left-radius: 200px;
@@ -90,24 +93,74 @@
   margin-top: 30px;
   font-size: 1.2em;
   padding: 30px; }
+  .project-content button {
+    font-size: 1em;
+    margin: 30px 5px 0 5px;
+    font-family: "Arimo", sans-serif;
+    padding: 10px;
+    border-radius: 100px;
+    background: #606d82;
+    color: #2a3342; }
+  .project-content button:focus {
+    outline: none !important;
+    background: black;
+    color: #606d82; }
+  .project-content button:hover {
+    background: black;
+    color: #606d82; }
 
 @media (min-width: 820px) {
-  #projects h1 {
-    color: white;
-    padding: 30px;
-    font-size: 4em; }
+  #projects {
+    display: grid;
+    grid-template-areas: "header header" "image-manager image-slider" "project-content project-content";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: center; }
+    #projects h1 {
+      color: white;
+      padding: 30px;
+      font-size: 4em; }
   #projects::before {
     background: linear-gradient(to right, #aec4e8, #606d82, #aec4e8);
     opacity: .7; }
   #projects::after {
     background-image: url("../../assets/pictures/sandHR.jpg"); }
+  .projects-header {
+    grid-area: header;
+    text-align: center; }
   .project-image {
-    width: 35vw;
-    height: 35vw; }
+    width: 40vw;
+    height: 40vw; }
   .image-manager {
-    flex-direction: row; }
+    grid-area: image-manager;
+    align-self: start; }
     .image-manager button {
       font-size: 2em;
       margin: 30px; }
+  .image-slider {
+    grid-area: image-slider; }
   .project-content {
-    width: 50vw; } }
+    width: 50vw;
+    grid-area: project-content;
+    justify-self: center; }
+  .project-links {
+    display: none; }
+  .project-links-pc {
+    display: flex;
+    justify-content: center; }
+    .project-links-pc button {
+      font-size: 2em;
+      margin: 30px;
+      font-family: "Arimo", sans-serif;
+      padding: 10px;
+      border-radius: 100px;
+      background: #606d82;
+      color: #2a3342; }
+    .project-links-pc button:focus {
+      outline: none !important;
+      background: black;
+      color: #606d82; }
+    .project-links-pc button:hover {
+      background: black;
+      color: #606d82; } }
