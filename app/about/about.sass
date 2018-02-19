@@ -10,7 +10,6 @@
   p
     margin-bottom: $spacer
     align-self: flex-start
-    text-indent: 50px
 
 #about::before
   content: ''
@@ -35,8 +34,8 @@
   z-index: -2
 
 .sds-primary-photo
-  height: 400px
-  width: 400px
+  height: 250px
+  width: 250px
   border-radius: 50%
   border-style: solid
   border-color: $blueSteel
@@ -44,7 +43,6 @@
   margin-bottom: $spacer
 
 .sds-primary-title
-  font-size: 7em
   font-family: $logoFont
   margin-bottom: $spacer
 
@@ -59,17 +57,21 @@
   margin-top: $spacer
 
 
-// @media screen and (min-width: 820px)
-//
-//   #about
-//     padding-top: 120px
-//
-//   .sds-primary-photo
-//     height: 400px
-//     width: 400px
-//
-//   .about-content
-//     font-size: 1.5em
+@media screen and (min-width: 820px)
+
+  #about
+    padding-top: 80px
+    h1
+      font-size: 4em
+    h3
+      font-size: 2em
+
+  .sds-primary-photo
+    height: 300px
+    width: 300px
+
+  .about-content
+    font-size: 1.5em
 
 
 // .logo-size-landing

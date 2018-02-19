@@ -38,11 +38,19 @@
   display: flex
   flex-direction: column
   button
+<<<<<<< HEAD
     font-size: 4em
     margin-bottom: $spacer
     font-family: $primaryFont
     border-radius: 100px
     padding: $spacer
+=======
+    font-size: 1em
+    margin-bottom: $spacer
+    font-family: $primaryFont
+    padding: 10px
+    border-radius: 100px
+>>>>>>> temporary
     background: $darkColor
   button:focus
     outline: none !important
@@ -55,11 +63,18 @@
   grid-template-columns: 1fr 8fr 1fr
 
 .project-image
-  width: 80vw
-  height: 80vw
+  width: 70vw
+  height: 70vw
 
 .slider-arrows
+<<<<<<< HEAD
   font-size: 5em
+=======
+  font-size: 2em
+
+.project-links-pc
+  display: none
+>>>>>>> temporary
 
 #left-arrow-button
   border-top-left-radius: 200px
@@ -89,6 +104,7 @@
   border-radius: 20px
   background-color: white
   margin-top: $spacer
+<<<<<<< HEAD
   font-size: 2em
   padding: $spacer
 
@@ -119,3 +135,88 @@
 //
 //   .project-content
 //     width: 50vw
+=======
+  font-size: 1.2em
+  padding: $spacer
+  button
+    font-size: 1em
+    margin: $spacer 5px 0 5px
+    font-family: $primaryFont
+    padding: 10px
+    border-radius: 100px
+    background: $mediumColor
+    color: $darkColor
+  button:focus
+    outline: none !important
+    background: black
+    color: $mediumColor
+  button:hover
+    background: black
+    color: $mediumColor
+
+@media (min-width: 820px)
+
+  #projects
+    display: grid
+    grid-template-areas: "header header" "image-manager image-slider" "project-content project-content"
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto
+    align-items: center
+    justify-content: center
+    h1
+      color: white
+      padding: $spacer
+      font-size: 4em
+
+  #projects::before
+    background: linear-gradient(to right, $lightColor , $mediumColor, $lightColor)
+    opacity: .7
+
+  #projects::after
+    background-image: url('../../assets/pictures/sandHR.jpg')
+
+  .projects-header
+    grid-area: header
+    text-align: center
+
+  .project-image
+    width: 40vw
+    height: 40vw
+
+  .image-manager
+    grid-area: image-manager
+    align-self: start
+    button
+      font-size: 2em
+      margin: $spacer
+
+  .image-slider
+    grid-area: image-slider
+
+  .project-content
+    width: 50vw
+    grid-area: project-content
+    justify-self: center
+
+  .project-links
+    display: none
+
+  .project-links-pc
+    display: flex
+    justify-content: center
+    button
+      font-size: 2em
+      margin: $spacer
+      font-family: $primaryFont
+      padding: 10px
+      border-radius: 100px
+      background: $mediumColor
+      color: $darkColor
+    button:focus
+      outline: none !important
+      background: black
+      color: $mediumColor
+    button:hover
+      background: black
+      color: $mediumColor
+>>>>>>> temporary

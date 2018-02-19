@@ -19,10 +19,23 @@
   border-bottom: solid #606d82 15px; }
 
 .skills-icons-size {
-  font-size: 10em; }
+  font-size: 3.5em; }
 
 .skills-auth0 {
-  height: 10em; }
+  height: 3.5em; }
 
 .skills-postman {
-  height: 10em; }
+  height: 3.5em; }
+
+@media screen and (min-width: 820px) {
+  #skills h1 {
+    font-size: 4em;
+    padding: 30px; }
+  .skills-icons {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; }
+  .skills-icons-size {
+    font-size: 5em; }
+  .skills-auth0 {
+    height: 5em; }
+  .skills-postman {
+    height: 5em; } }
