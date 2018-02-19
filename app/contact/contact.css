@@ -1,21 +1,69 @@
 @import url("https://fonts.googleapis.com/css?family=Arimo|Roboto+Slab");
 #contact {
-  margin-top: 30px;
-  margin-bottom: 150px;
+  position: relative;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: flex-start;
+  color: white; }
+  #contact h1 {
+    margin-bottom: 30px;
+    align-self: center; }
+
+#contact::before {
+  content: '';
+  background-image: url("../../assets/pictures/circuit.jpeg");
+  background-repeat: no-repeat;
+  opacity: .2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1; }
+
+#contact::after {
+  content: '';
+  background-color: #2a3342;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -2; }
+
+.contact-info {
+  font-size: 1em; }
+  .contact-info p {
+    padding-bottom: 30px; }
+  .contact-info a {
+    color: #aec4e8; }
 
 .contact-icons {
-  margin: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 30px;
-  justify-content: center; }
+  grid-template-columns: 1fr 9fr;
+  grid-column-gap: 5px; }
+  .contact-icons a {
+    padding-bottom: 30px;
+    color: #aec4e8; }
 
 .contact-icon-size {
-  font-size: 15em; }
+  font-size: 3em;
+  color: #aec4e8; }
+
+.twitter-icon {
+  font-size: 2.5em;
+  color: #aec4e8; }
 
 .signature {
   align-self: flex-end;
-  margin: 30px; }
+  padding-bottom: 30px;
+  font-weight: bold;
+  color: white; }
+
+@media screen and (min-width: 820px) {
+  #contact {
+    padding-bottom: 0; }
+    #contact h1 {
+      font-size: 4em;
+      padding: 30px; } }

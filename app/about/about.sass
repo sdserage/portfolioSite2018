@@ -6,14 +6,15 @@
   flex-direction: column
   align-items: center
   padding: $spacer
+  color: white
   p
     margin-bottom: $spacer
     align-self: flex-start
-    text-indent: 50px
 
 #about::before
   content: ''
-  background-image: url('../../assets/pictures/sandHR.jpg')
+  background-image: url('../../assets/pictures/texturedWood.jpeg')
+  background-repeat: no-repeat
   opacity: .2
   position: absolute
   top: 0
@@ -33,8 +34,8 @@
   z-index: -2
 
 .sds-primary-photo
-  height: 800px
-  width: 800px
+  height: 250px
+  width: 250px
   border-radius: 50%
   border-style: solid
   border-color: $blueSteel
@@ -42,13 +43,39 @@
   margin-bottom: $spacer
 
 .sds-primary-title
-  font-size: 7em
+  font-family: $logoFont
+  margin-bottom: $spacer
 
-.about-heading
-  margin: $spacer
+.sds-primary-subtitle
+  padding-left: 20vw
+  padding-right: 20vw
+  padding-bottom: $spacer
+  border-bottom: solid 15px
+  margin-bottom: $spacer
 
-.logo-size-landing
-  h1
-    font-size: 110px
-  h2
-    font-size: 90px
+.about-content
+  margin-top: $spacer
+
+
+@media screen and (min-width: 820px)
+
+  #about
+    padding-top: 80px
+    h1
+      font-size: 4em
+    h3
+      font-size: 2em
+
+  .sds-primary-photo
+    height: 300px
+    width: 300px
+
+  .about-content
+    font-size: 1.5em
+
+
+// .logo-size-landing
+//   h1
+//     font-size: 110px
+//   h2
+//     font-size: 90px

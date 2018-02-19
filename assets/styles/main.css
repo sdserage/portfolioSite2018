@@ -50,22 +50,22 @@ body {
 
 /* standardized h group */
 h1 {
-  font-size: 4em; }
+  font-size: 2em; }
 
 h2 {
-  font-size: 3em; }
+  font-size: 1.5em; }
 
 h3 {
-  font-size: 2.34em; }
+  font-size: 1.17em; }
 
 h4 {
-  font-size: 2.24em; }
+  font-size: 1.12em; }
 
 h5 {
-  font-size: 1.64em; }
+  font-size: .83em; }
 
 h6 {
-  font-size: 1.5em; }
+  font-size: .75em; }
 
 .logo {
   font-family: "Roboto Slab", serif;
