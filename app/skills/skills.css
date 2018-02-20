@@ -11,12 +11,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  grid-column-gap: 10vw;
+  grid-column-gap: 5vw;
   grid-row-gap: 5vw;
   padding: 30px;
   margin-bottom: 30px;
   border-top: solid #606d82 15px;
   border-bottom: solid #606d82 15px; }
+  .skills-icons div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .skills-icons div p {
+      font-size: 1em;
+      margin-top: 5px; }
 
 .skills-icons-size {
   font-size: 3.5em; }
